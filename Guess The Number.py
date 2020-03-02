@@ -15,8 +15,9 @@ def main():
         #Deck for card values
         my_deck = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35
         ,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50]
-
-        print("\nDeck\n")
+        
+        print("\n")
+        print("Deck")
         print(my_deck)
 
         mystery_number1 = random.randint(1, 50)
@@ -27,7 +28,7 @@ def main():
         if Usr_Guess == mystery_number1:
             print("Congratulations, you guessed it right!")
             human_p = human_p + 1
-
+            print("\n")
             print("Statistics")
             print("Your points: %s" % human_p)
             print("Computer's points: %s" % computer_p)
@@ -36,13 +37,14 @@ def main():
         else:
             print("Wrong!")
             print("The answer was %s" % mystery_number1)
-
-            print("\nStatistics\n")
+            print("\n")
+            print("Statistics")
             print("Your points: %s" % human_p)
             print("Computer's points: %s" % computer_p)
             print("Now it is the computer's turn to guess")
-
-        print("\nComputer's Turn\n")
+        
+        print("\n")
+        print("Computer's Turn")
 
         computer_guess = random.randint(1, 50)
         print("The computer guessed %s" % computer_guess)
@@ -50,13 +52,15 @@ def main():
         if computer_guess == mystery_number1:
             print("The computer guessed it right!")
             computer_p = computer_p + 1
-            print("\nYour points: %s\n" % human_p)
+            print("\n")
+            print("Your points: %s" % human_p)
             print("Computer's points: %s" % computer_p)
 
         else:
            print("The computer guessed wrong")
-
-    print("\nFinal Score:\n")
+    
+    print("\n")
+    print("Final Score:")
     print("Your points: %s" % human_p)  
     print("Computer's points: %s" %computer_p)
 
@@ -80,4 +84,3 @@ if user_input == 'yes':
 
 else: 
     sys.exit()
-
